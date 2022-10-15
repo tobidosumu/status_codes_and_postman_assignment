@@ -75,9 +75,9 @@
        
        
        
-  **2.  Create 20 endpoints using different status codes then add them to postman**
+  2.  __Create 20 endpoints using different status codes then add them to postman__
 
-       Please visit this link 👉 [Link to 30 status code endpoints](./index.js) for the answers.
+       Please visit this link 👉 [link to 30 status code endpoints](./index.js) for the answers.
   
   
   **3.  Write 5 differences between server error and client error (create an endpoint for this assignment and write
