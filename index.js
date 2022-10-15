@@ -6,6 +6,7 @@ const PORT = 5000
 
 app.use(express.json({ extended: true }))
 
+// #1
 app.get('/ok', (req, res) => {
     res
         .status(200)
@@ -16,6 +17,7 @@ app.get('/ok', (req, res) => {
         })
 })
 
+// #2
 app.get('/created', (req, res) => {
     res
         .status(201)
@@ -26,6 +28,7 @@ app.get('/created', (req, res) => {
         })
 })
 
+// #3
 app.get('/accepted', (req, res) => {
     res
         .status(202)
@@ -36,6 +39,7 @@ app.get('/accepted', (req, res) => {
         })
 })
 
+// #4
 app.get('/non-authoritative-info', (req, res) => {
     res
         .status(203)
@@ -46,6 +50,7 @@ app.get('/non-authoritative-info', (req, res) => {
         })
 })
 
+// #5
 app.get('/no-content', (req, res) => {
     res
         .status(204)
@@ -56,6 +61,7 @@ app.get('/no-content', (req, res) => {
         })
 })
 
+// #6
 app.get('/reset-content', (req, res) => {
     res
         .status(205)
@@ -66,6 +72,7 @@ app.get('/reset-content', (req, res) => {
         })
 })
 
+// #7
 app.get('/partial-content', (req, res) => {
     res
         .status(206)
@@ -76,6 +83,7 @@ app.get('/partial-content', (req, res) => {
         })
 })
 
+// #8
 app.get('/multiple-choices', (req, res) => {
     res
         .status(300)
@@ -86,6 +94,7 @@ app.get('/multiple-choices', (req, res) => {
         })
 })
 
+// #9
 app.get('/moved-permanently', (req, res) => {
     res
         .status(301)
@@ -96,6 +105,7 @@ app.get('/moved-permanently', (req, res) => {
         })
 })
 
+// #10
 app.get('/found', (req, res) => {
     res
         .status(302)
@@ -106,6 +116,7 @@ app.get('/found', (req, res) => {
         })
 })
 
+// #11
 app.get('/see-other', (req, res) => {
     res
         .status(303)
@@ -116,6 +127,7 @@ app.get('/see-other', (req, res) => {
         })
 })
 
+// #12
 app.get('/not-modified', (req, res) => {
     res
         .status(304)
@@ -126,6 +138,7 @@ app.get('/not-modified', (req, res) => {
         })
 })
 
+// #13
 app.get('/temporary-redirect', (req, res) => {
     res
         .status(307)
@@ -136,6 +149,7 @@ app.get('/temporary-redirect', (req, res) => {
         })
 })
 
+// #14
 app.get('/bad-request', (req, res) => {
     res
         .status(400)
@@ -146,6 +160,7 @@ app.get('/bad-request', (req, res) => {
         })
 })
 
+// #15
 app.get('/unauthorized', (req, res) => {
     res
         .status(401)
@@ -156,6 +171,7 @@ app.get('/unauthorized', (req, res) => {
         })
 })
 
+// #16
 app.get('/payment-required', (req, res) => {
     res
         .status(402)
@@ -166,6 +182,7 @@ app.get('/payment-required', (req, res) => {
         })
 })
 
+// #17
 app.get('/forbidden', (req, res) => {
     res
         .status(403)
@@ -176,6 +193,7 @@ app.get('/forbidden', (req, res) => {
         })
 })
 
+// #18
 app.get('/not-found', (req, res) => {
     res
         .status(404)
@@ -186,6 +204,7 @@ app.get('/not-found', (req, res) => {
         })
 })
 
+// #19
 app.get('/method-not-allowed', (req, res) => {
     res
         .status(405)
@@ -196,6 +215,7 @@ app.get('/method-not-allowed', (req, res) => {
         })
 })
 
+// #20
 app.get('/not-acceptable', (req, res) => {
     res
         .status(406)
@@ -206,6 +226,7 @@ app.get('/not-acceptable', (req, res) => {
         })
 })
 
+// #21
 app.get('/proxy-authentication-required', (req, res) => {
     res
         .status(407)
@@ -216,6 +237,7 @@ app.get('/proxy-authentication-required', (req, res) => {
         })
 })
 
+// #22
 app.get('/request-timeout', (req, res) => {
     res
         .status(408)
@@ -226,6 +248,7 @@ app.get('/request-timeout', (req, res) => {
         })
 })
 
+// #23
 app.get('/conflict', (req, res) => {
     res
         .status(409)
@@ -236,6 +259,7 @@ app.get('/conflict', (req, res) => {
         })
 })
 
+// #24
 app.get('/gone', (req, res) => {
     res
         .status(410)
@@ -246,6 +270,7 @@ app.get('/gone', (req, res) => {
         })
 })
 
+// #25
 app.get('/length-required', (req, res) => {
     res
         .status(411)
@@ -256,6 +281,7 @@ app.get('/length-required', (req, res) => {
         })
 })
 
+// #26
 app.get('/precondition-failed', (req, res) => {
     res
         .status(412)
@@ -266,6 +292,7 @@ app.get('/precondition-failed', (req, res) => {
         })
 })
 
+// #27
 app.get('/payload-too-large', (req, res) => {
     res
         .status(413)
@@ -276,6 +303,7 @@ app.get('/payload-too-large', (req, res) => {
         })
 })
 
+// #28
 app.get('/uri-too-long', (req, res) => {
     res
         .status(414)
@@ -286,6 +314,7 @@ app.get('/uri-too-long', (req, res) => {
         })
 })
 
+// #29
 app.get('/unsupported-media-type', (req, res) => {
     res
         .status(415)
@@ -296,6 +325,7 @@ app.get('/unsupported-media-type', (req, res) => {
         })
 })
 
+// #30
 app.get('/range-not-satisfiable', (req, res) => {
     res
         .status(416)
