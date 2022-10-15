@@ -2,9 +2,9 @@
 
 **1. a. Why do we need status code?**
 
-        An HTTP status code is a server response to a browser's request. When you visit a website, 
-        your browser sends a request to the site's server, and the server then responds to the 
-        browser's request with a three-digit code: the HTTP status code.
+        An HTTP status code is a server response to a browser's request. When a website is visited, 
+        the browser sends a request to the site's server, and the server then responds to the 
+        browser's request with a three-digit code - the HTTP status code.
 
         Status and error codes refer to a code number in the response header that indicates 
         the general classification of the response — for example, whether the request was 
@@ -12,13 +12,13 @@
         and so on.  
         
         
-     **b.  Give 5 reasons for question 1a**
+   **b.  Give 5 reasons for question 1. a.**
     
-       i.  status code defines the status of the request. On entering URL, a mistake can be typed in the URL,
+       i.  Status code defines the status of the request. On entering a URL, a mistake can be typed in the URL,
            or there may be a server-side problem. Status code is used to know about what went wrong and where you
            made a mistake.    
            
-       ii. They help identify the cause of the problem when a web page or other resource doesn't load properly.
+       ii. They help identify the cause of the problem when a web page or other resource do not load properly.
        
       iii. For example, the HTTP status line 500: Internal Server Error is made up of the HTTP status code of 
            500 and the HTTP reason phrase of Internal Server Error.
@@ -30,7 +30,7 @@
            by the website's server, but is incapable of filling it for some reason.
            
            
-    c. List 10 of the most important error codes arranged in priorities
+   **c. List 10 of the most important error codes arranged in priorities**
            
         i.  Status Code 200 – This is the standard “OK” status code for a successful HTTP request. 
             The response that is returned is dependent on the request. For example, for a GET request, 
@@ -75,17 +75,17 @@
        
        
        
-  2.  Create 20 endpoints using different status codes then add them to postman
+  **2.  Create 20 endpoints using different status codes then add them to postman**
 
-        [Link to 30 status code endpoints](./index.js)
+       Please visit this link 👉 [Link to 30 status code endpoints](./index.js) for the answers.
   
   
-  3.  Write 5 differences between server error and client error (create an endpoint for this assignment and write
-      the answer inside your code. Call the endpoint assignment-three)
+  **3.  Write 5 differences between server error and client error (create an endpoint for this assignment and write
+      the answer inside your code. Call the endpoint assignment-three)**
 
 
-  4.  Tell the code the difference you want to see in question 3
+  **4.  Tell the code the difference you want to see in question 3**
   
-  5.  Use get by id in another endpoint
+  **5.  Use get by id in another endpoint**
   
   
