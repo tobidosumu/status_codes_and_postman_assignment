@@ -75,13 +75,15 @@
        
        
        
-__2.  Create 20 endpoints using different status codes then add them to postman
-      Please visit this link 👉 [link to 30 status code endpoints](./index.js) for the answers.
+**2.  Create 20 endpoints using different status codes then add them to postman**<br>
+      Please visit this link 👉 [link to 30 status code endpoints](./index.js) for the answer.
       
-     
+      
+      
 
-**3.  Write 5 differences between server-side error and client-side error (create an endpoint for this assignment and write
-      the answer inside your code. Call the endpoint assignment-three)**
+**3.  Write 5 differences between server-side error and client-side error (create an endpoint for this assignment 
+      and write the answer inside your code. Call the endpoint assignment-three)**<br>
+      Please visit this link 👉 [link to question 3](./index.js) for the answer.
       
       Client-Side Status Codes
       ------------------------
@@ -176,7 +178,7 @@ __2.  Create 20 endpoints using different status codes then add them to postman
       If you think your request is reasonable and the status doesn’t go away, contact support.
 
 
-      5. 501 Not ImplementedPermalink
+      5. 501 Not Implemented
       The 501 Not Implemented status code is related to the HTTP method you used to request an URL. You can try a different HTTP
       method to make the request.
 
@@ -186,7 +188,10 @@ __2.  Create 20 endpoints using different status codes then add them to postman
 
 
 **4.  Tell the code the difference you want to see in question 3**
+      Please visit this link 👉 [link to question 4(./index.js) for the answer.
   
-**5.  Use get by id in another endpoint**
+**5.  Use GET by id in another endpoint**<br>
+      Please visit this link 👉 [link to question 5(./index.js) for the answer.
+      
   
   
