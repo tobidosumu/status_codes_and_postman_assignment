@@ -191,8 +191,11 @@
       Please visit this link 👉 [link to question 4](./index.js) for the answer.
   
   
-**5.  Use GET by id in another endpoint**<br>
-      Please visit this link 👉 [link to question 5](./index.js) for the answer.
+**5.  Use GET by ID in another endpoint**<br>
+      Please visit this link 👉 [link to question 5](./index.js) for the answer.<br>
+      
+      Please follow these steps to fetch the endpoints by their IDs:
+    
       
   
   
