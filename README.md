@@ -44,12 +44,12 @@
             information. Examples of this status code include delete requests or if a request was sent via a form and the response
             should not cause the form to be refreshed or for a new page to load.
             
-      iv.   Status Code 304 – The is status code used for browser caching. If the response has not been modified, 
+       iv.  Status Code 304 – The is status code used for browser caching. If the response has not been modified, 
             the client/user can continue to use the same response/cached version. For example, a browser can request 
             if a resource has been modified since a specific time. If it hasn’t, the status code 304 is sent. If it has
             been modified, a status code 200 is sent, along with the resource.
             
-      v.    Status Code 400 – The server cannot understand and process a request due to a client error. Missing data, 
+       v.   Status Code 400 – The server cannot understand and process a request due to a client error. Missing data, 
             domain validation, and invalid formatting are some examples that cause the status code 400 to be sent.
             
       vi.   Status Code 401 – This status code request occurs when authentication is required but has failed or not been provided.
@@ -80,12 +80,57 @@
        Please visit this link 👉 [link to 30 status code endpoints](./index.js) for the answers.
   
   
-  **3.  Write 5 differences between server error and client error (create an endpoint for this assignment and write
+**3.  Write 5 differences between server error and client error (create an endpoint for this assignment and write
       the answer inside your code. Call the endpoint assignment-three)**
+      
+    * Client-Side Status Codes
+      The 4XX group of status codes is usually related to client-side errors, but changes to the API can also cause 
+      them. Here are the 5 most common client-side status error codes and how to solve for them:
+      
+    __1. 404 Not Found__
+      This is by far the most common HTTP status code you can get. It indicates that the URL you used in your request
+      doesn’t exist on the API server, or origin server. While this is a 4XX error, which usually means something on 
+      the client-side is wrong, this can also indicate a server problem. Sometimes API URL paths change after a version 
+      update, but sometimes they change because something on the server went wrong.
 
+      The best course of action is to check if you have a typo in your client code before checking if the API has issues.
+      
+    __2. 401 Unauthorized__
+      This status code means you haven’t yet authenticated against the API. The API doesn’t know who you are and it will not
+      serve you.
 
-  **4.  Tell the code the difference you want to see in question 3**
+      For most APIs you need to sign up and get an API key. This key is then used inside an HTTP header field when you send
+      a request, telling the API who you are.
+
+      This http status code is similar to the less common 407 Proxy Authentication Required, which means you have not 
+      authenticated with the proxy.
+
+    __3. 403 Forbidden__
+      The forbidden status indicates that you don’t have permission to request that URL. You’re authenticated, but the user 
+      or role you’re authenticated for isn’t permitted to make the API request.
+
+      This also occurs when you have an authentication issue, like when using the wrong API key or trying to access features
+      your subscription plan doesn’t allow for.
+
+    __4. 400 Bad Request__
+      The 400 Bad Request error message is one of the most generic HTTP status codes. It implies that you did not correctly 
+      format your API request. If no additional error information is given in the response body, you have to check the docs. 
+      You could be missing a query, a field in the request body, or a header field could be wrong. It could also be that some 
+      of your request data might have incorrect syntax.
+
+      This is different from the 422 Unprocessable Entity error message, which appears when your request is correctly formatted, 
+      but cannot be processed.
+      
+    __5. 429 Too Many Requests__
+      Most API subscription plans have limits — the cheaper the plan, the fewer requests per second are allowed for your API key.
+
+      If you’re sending too many requests in a short amount of time, consider throttling them in your client. This response can 
+      also indicate that you hit a daily, weekly, or monthly limit on your account. Without implementing API analytics, it’s 
+      possible to reach these limits without receiving a push notification or email alert.
+      
+
+**4.  Tell the code the difference you want to see in question 3**
   
-  **5.  Use get by id in another endpoint**
+**5.  Use get by id in another endpoint**
   
   
