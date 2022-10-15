@@ -194,7 +194,11 @@
 **5.  Use GET by ID in another endpoint**<br>
       Please visit this link 👉 [link to question 5](./index.js) for the answer.<br>
       
-      Please follow these steps to fetch the endpoints by their IDs:
+      Please follow these steps to fetch the endpoints by their IDs:<br>
+      ![Step 1](./images/step1_of_get_endpoint_id.jpeg)
+      ![Step 2](./images/step2_of_get_endpoint_id.jpeg)
+      ![Step 3](./images/final_result.jpeg)
+
     
       
   
