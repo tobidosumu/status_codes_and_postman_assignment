@@ -1,4 +1,4 @@
-# Status Code Endpoints on Postman Assignment <br>
+# Status Code Endpoints on Postman - Assignment <br>
 
 **1. a. Why do we need status code?**
 
@@ -12,7 +12,7 @@
         and so on.  
         
         
-    b. Give 5 reasons for question 1a
+     **b.  Give 5 reasons for question 1a**
     
        i.  status code defines the status of the request. On entering URL, a mistake can be typed in the URL,
            or there may be a server-side problem. Status code is used to know about what went wrong and where you
