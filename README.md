@@ -1,7 +1,5 @@
 # Status Code Endpoints on Postman Assignment <br>
 
-#### This is part of a series of assignments at Upperlink (where I intern)
-
 **1. a. Why do we need status code?**
 
         An HTTP status code is a server response to a browser's request. When you visit a website, 
