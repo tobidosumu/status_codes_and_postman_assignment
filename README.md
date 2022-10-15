@@ -187,11 +187,12 @@
       will be available to them in future requests.
 
 
-**4.  Tell the code the difference you want to see in question 3**
-      Please visit this link 👉 [link to question 4(./index.js) for the answer.
+**4.  Tell the code the difference you want to see in question 3**<br>
+      Please visit this link 👉 [link to question 4](./index.js) for the answer.
+  
   
 **5.  Use GET by id in another endpoint**<br>
-      Please visit this link 👉 [link to question 5(./index.js) for the answer.
+      Please visit this link 👉 [link to question 5](./index.js) for the answer.
       
   
   
