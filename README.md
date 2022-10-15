@@ -75,13 +75,12 @@
        
        
        
-**2.  Create 20 endpoints using different status codes then add them to postman**
-
+__2.  Create 20 endpoints using different status codes then add them to postman
       Please visit this link 👉 [link to 30 status code endpoints](./index.js) for the answers.
-  
-  
-  
-**3.  Write 5 differences between server error and client error (create an endpoint for this assignment and write
+      
+     
+
+**3.  Write 5 differences between server-side error and client-side error (create an endpoint for this assignment and write
       the answer inside your code. Call the endpoint assignment-three)**
       
       Client-Side Status Codes
@@ -181,9 +180,9 @@
       The 501 Not Implemented status code is related to the HTTP method you used to request an URL. You can try a different HTTP
       method to make the request.
 
-      Usually, an HTTP request with an inappropriate method simply results in a 404 not found status. A not-implemented status implies 
-      that the method isn’t implemented “yet.” The API creator can use this status to tell the clients that this method will be available 
-      to them in future requests.
+      Usually, an HTTP request with an inappropriate method simply results in a 404 not found status. A not-implemented status 
+      implies that the method isn’t implemented “yet.” The API creator can use this status to tell the clients that this method 
+      will be available to them in future requests.
 
 
 **4.  Tell the code the difference you want to see in question 3**
