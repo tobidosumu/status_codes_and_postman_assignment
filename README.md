@@ -2,11 +2,11 @@
 
 #### This is part of a series of assignments at Upperlink (where I intern)
 
-1. a. Why do we need status code?
+**1. a. Why do we need status code?**
 
         An HTTP status code is a server response to a browser's request. When you visit a website, 
-        your browser sends a request to the site's server, and the server then responds to the browser's 
-        request with a three-digit code: the HTTP status code.
+        your browser sends a request to the site's server, and the server then responds to the 
+        browser's request with a three-digit code: the HTTP status code.
 
         Status and error codes refer to a code number in the response header that indicates 
         the general classification of the response — for example, whether the request was 
