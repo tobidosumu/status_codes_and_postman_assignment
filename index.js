@@ -468,7 +468,11 @@ app.get('/server-vs-client-error', (req, res) => {
         })
 }   )
 
-// #5
+
+// Question 3 done using the approach taught in the class
+// #############################################################################################################
+
+// #3
 app.get('/:id', (req, res) => {
     res
         .id(44)
@@ -479,5 +483,59 @@ app.get('/:id', (req, res) => {
             "meaning": "Further extensions to the request are required for the server to fulfill it."
         })
 }   )
+
+let differenceFour = {
+    clientError: "A for donkey",
+    serverError: "A for bird"
+}
+
+let differenceThree = {
+    clientError: "A for donkey",
+    serverError: "A for bird"
+}
+
+app.get('/ok', (req, res) => {
+    res.status(200).json({status:"ok"})
+})
+
+app.get('/not-found', (req, res) => {
+    res.status(400).json({status:"not found"})
+})
+
+app.post("/question-four", (req, res) => {
+    let data = {},
+    diff = req.body.difference
+    let differences = ["one", "two", "three", "four", "five"]
+    let valDiff = differences.find((each) => each === diff)
+    if (!valDiff) {
+        res.status(400).json({status: "bad request", message: "invalid parameter"})
+    } else {
+        if (diff === "one") data = differenceOne
+        if (diff === "two") data = differenceTwo
+        if (diff === "three") data = differenceThree
+        if (diff === "four") data = differenceFour
+        if (diff === "five") data = differenceFive
+        if (diff === "six") data = differenceSix
+        res.status(200).json({status:"ok", data:data.serverError})
+    }
+})
+
+app.get("/question-five/:diff", (req, res) => {
+    let data = {},
+    diff = req.params.diff
+    let differences = ["one", "two", "three", "four", "five"]
+    let valdiff = differences.find((each) => each === diff)
+    if (!valdiff) {
+        res.status(400).json({status: "bad request", message: "invalid parameter"})
+    } else {
+        if (diff === "one") data = differenceOne
+        if (diff === "two") data = differenceTwo
+        if (diff === "three") data = differenceThree
+        if (diff === "four") data = differenceFour
+        if (diff === "five") data = differenceFive
+        if (diff === "six") data = differenceSix
+        res.status(200).json({status:"ok", data})
+    }
+})
 
 app.listen(PORT, () => console.log(`Serve Running on port: http://localhost:${PORT}`))
